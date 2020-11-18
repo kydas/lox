@@ -6,7 +6,11 @@ use std::io;
 use std::io::Write;
 
 pub mod token_type;
+#[macro_use]
 pub mod token;
+pub mod scanner;
+
+
 
 fn main() {
     let args: Vec<String> =  env::args().collect();
